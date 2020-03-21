@@ -2,6 +2,10 @@
 
 This project consumes the web API provided by: https://github.com/srad/GreenhousePlusPlus
 
+## Screenshots
+
+![](https://raw.githubusercontent.com/srad/GreenhousePlusPlus.App/master/docs/screenshot0.jpg)
+
 ## Project setup
 ```
 npm install
