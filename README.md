@@ -1,4 +1,6 @@
-# greenhouse-app
+# GreenhousePlusPlus.App
+
+This project consumes the web API provided by: https://github.com/srad/GreenhousePlusPlus
 
 ## Project setup
 ```
