@@ -1,16 +1,16 @@
-$primary: #54aea8;
+$primary: #8152A5;
 $secondary: #868492;
 $light: #eeeeee;
 $success: #30bc9f;
 $danger: #9d3e59;
 $dark: #333a44;
 $body-bg: #fafafa;
-$border-radius: 2px;
+$border-radius: 0px;
 $warning: #dbc481;
 $table-cell-padding: 0.3rem;
 $table-cell-padding: 0.4rem;
-$input-bg: $dark;
-$input-border-color: $primary;
+$input-bg: darken($light, 5);
+$input-border-color: $light;
 $input-color: $primary;
 $input-disabled-bg: lighten($dark, 10);
 $custom-control-label-color: $primary;
@@ -21,31 +21,12 @@ $hr-border-color: $primary;
 // BootstrapVue and its default variables
 @import "~bootstrap-vue/src/index.scss";
 
-.tabs .nav-item {
-  background-color: $dark;
-}
-
-.text-sm { font-size: $font-size-sm; }
-
-.border-dark td { border-color: $dark; }
-
-.border-primary td { border-color: $primary; }
-
-.border-secondary td { border-color: $secondary; }
-
-.app-bar-padding { padding-bottom: 3.5rem; }
-
-.bg-dark-op {
-  background: rgba($dark, .9);
-}
-
 html, body, #app, #app .container-fluid {
   width: 100%;
   height: 100%;
   top: 100%;
   left: 0;
   right: 0;
-  color: $light;
 }
 
 html {
@@ -53,14 +34,6 @@ html {
   overflow-y: scroll;
 }
 
-body.poster .page-header { color: $dark; }
-
-body:not(.poster) .page-header { color: $primary; }
-
-body { background-color: $dark;}
-
-legend { color: $primary !important;}
-
-.iframe {
-  color: $light;
+body {
+  background-color: $dark;
 }
