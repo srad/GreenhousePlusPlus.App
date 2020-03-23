@@ -4,16 +4,17 @@ This project consumes the web API provided by: https://github.com/srad/Greenhous
 
 ## Quickstart
 
-``bash
+```bash
 git clone https://github.com/srad/GreenhousePlusPlus.App.git
 npm install
 cp .env.default .env.local
 ```
+
 Now replace the `#{API_URL}#` in `.env.local` which the endpoint address, i.e.: `http://localhost:5000`
 
 Start the development server:
 
-``bash
+```bash
 npm run serve
 ```
 
