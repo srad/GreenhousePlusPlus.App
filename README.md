@@ -2,6 +2,21 @@
 
 This project consumes the web API provided by: https://github.com/srad/GreenhousePlusPlus
 
+## Quickstart
+
+``bash
+git clone https://github.com/srad/GreenhousePlusPlus.App.git
+npm install
+cp .env.default .env.local
+```
+Now replace the `#{API_URL}#` in `.env.local` which the endpoint address, i.e.: `http://localhost:5000`
+
+Start the development server:
+
+``bash
+npm run serve
+```
+
 ## Screenshots
 
 ![](https://raw.githubusercontent.com/srad/GreenhousePlusPlus.App/master/docs/screenshot0.jpg)
