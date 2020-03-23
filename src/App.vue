@@ -5,7 +5,6 @@
       <router-link to="/">
         <b-navbar-brand class="font-weight-bold text-white m-0 p-0">
           Greenhouse++
-          <font-awesome-icon icon="hands-helping" class="ml-3"/>
         </b-navbar-brand>
       </router-link>
     </b-navbar>

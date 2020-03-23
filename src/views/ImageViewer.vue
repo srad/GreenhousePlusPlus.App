@@ -178,9 +178,9 @@ export default {
           response.data.forEach(file => {
             file.path = API_URL + file.path;
             this.images.push(file);
-            this.working = false;
-          });
-        });
+          })
+          this.working = false;
+        }).catch(err => console.log(err));
     },
     reset() {
       Object.keys(this.files)
