@@ -70,6 +70,7 @@ import axios from "axios";
 import ImageFrame from "../components/ImageFrame";
 
 const API_URL = process.env.VUE_APP_API_URL;
+const MAX_UPLOAD_SIZE = 3.0;
 
 export default {
   name: "ImageViewer",
@@ -124,6 +125,11 @@ export default {
   },
   watch: {
     file(val) {
+      const fileInMB = val.size / 1024 / 1024;
+      if (fileInMB > MAX_UPLOAD_SIZE) {
+        alert(`Maxium file file is ${MAX_UPLOAD_SIZE}MB, yours is ${fileInMB}MB`);
+        return;
+      }
       this.working = true;
       const formData = new FormData();
       formData.append("file", val);
@@ -135,7 +141,10 @@ export default {
         this.thumblist();
         this.loadFiles(res.data);
         this.working = false;
-      });
+      }).catch(error => {
+        alert(error.response.data.title);
+        this.working = false;
+      })
     },
   },
   methods: {
