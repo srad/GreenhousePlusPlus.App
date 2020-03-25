@@ -1,6 +1,7 @@
 # GreenhousePlusPlus.App
 
 GreenhousePlusPlus.WebAPI
+
 [![Build Status](https://jenkins.sedrad.com/buildStatus/icon?job=GreenhousePlusPlus.WebApi)](https://jenkins.sedrad.com/job/GreenhousePlusPlus.WebApi/)
 
 This project consumes the web API provided by: https://github.com/srad/GreenhousePlusPlus
