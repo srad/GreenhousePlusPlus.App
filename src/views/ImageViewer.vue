@@ -70,7 +70,7 @@ import axios from "axios";
 import ImageFrame from "../components/ImageFrame";
 
 const API_URL = process.env.VUE_APP_API_URL;
-const MAX_UPLOAD_SIZE = 3.0;
+const MAX_UPLOAD_SIZE = 5.0;
 
 export default {
   name: "ImageViewer",
